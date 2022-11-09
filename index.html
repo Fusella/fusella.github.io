@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio foglio appunti personale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr class="titolo">
+                <th colspan="3"><h1>HTML</h1></th>
+            </tr>
+            <tr>
+                <th><h2>Nome dell'attributo</h2></th>
+                <th><h2>Come si formatta</h2></th>
+                <th><h2>Descrizione del suo utilizzo</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Table</th>
+                <td><code class="elemento">table</code></td>
+                <td>Si utilizza per creare la base della tabella:
+                    in pratica questo elemento funziona solo come
+                    raccoglitore, al suo interno andranno inseriti
+                    i prossimi elementi.
+                </td>
+            </tr>
+            <tr>
+                <th>Table Header</th>
+                <td><code class="elemento">thead</code></td>
+                <td>Serve per comprendere meglio la struttura della
+                    tabella. Non ha utilizzi prettamente funzionali
+                    ma funge come divisore al fine di organizzare
+                    meglio la tabella. Al suo interno andrebbero posti
+                    i titoli, ossia la prima riga.
+                </td>
+            </tr>
+            <tr>
+                <th>Table Body</th>
+                <td><code class="elemento">tbody</code></td>
+                <td>Ha le stesse identiche funzionalità di
+                    <code class="elemento">thead</code>, ma questa volta
+                    serve per contenere il corpo, o meglio la parte centrale
+                    della tabella.</td>
+            </tr>
+            <tr>
+                <th>Table Footer</th>
+                <td><code class="elemento">tfoot</code></td>
+                <td>Stesso funzionamento dei due elementi di cui sopra, soltanto
+                    che in questo caso si inserisce la parte finale della tabella,
+                    l'ultima riga di solito, quella che in genere contiene
+                    dati come ad esempio il totale di una somma.
+                </td>
+            </tr>
+            <tr>
+                <th>Table Head</th>
+                <td><code class="elemento">th</code></td>
+                <td>Si utilizza al posto dell'elemento
+                    <code class="elemento">td</code> che vedremo più avanti
+                    per indicare che si tratta di un titolo. In genere sono
+                    la prima riga e/o la prima colonna della tabella, dove si
+                    descrive cosa si trova di seguito.
+                    In questo elemento si può utilizzare l'attributo
+                    <code class="attributo">colspan</code> oppure
+                    <code class="attributo">rowspan</code>,
+                    seguito dal simbolo = ed un numero intero, per indicare
+                    la quantità rispettivamente di colonne o righe che
+                    quella casella andrà ad occupare.</td>
+            </tr>
+            <tr>
+                <th>Table Row</th>
+                <td><code class="elemento">tr</code></td>
+                <td>Si utilizza all'interno del precedente elemento,
+                    serve per far capire al browser che al suo interno
+                    verrà inserita una riga della tabella.
+                </td>
+            </tr>
+            <tr>
+                <th>Table Data</th>
+                <td><code class="elemento">td</code></td>
+                <td>Si tratta delle restanti caselle della tabella,
+                    le quali costituiscono il corpo vero e proprio della
+                    stessa.
+                    In questo elemento si può utilizzare l'attributo
+                    <code class="attributo">colspan</code> oppure
+                    <code class="attributo">rowspan</code>,
+                    seguito dal simbolo = ed un numero intero, per indicare
+                    la quantità rispettivamente di colonne o righe che
+                    quella casella andrà ad occupare.
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3" class="finale">Qui ho trattato la struttura HTML della tabella
+                come progetto di prova per CodeCademy.com
+            </td>
+        </tfoot>
+    </table> 
+</body>
+</html>
